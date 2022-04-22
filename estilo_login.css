@@ -1,0 +1,79 @@
+div{
+    text-align: center ;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    padding: 80px;
+    background-color: white;
+    border: 0.5px solid lightgray;
+    opacity: 0.85;
+
+}
+h1{
+    text-align: center;
+    color: #212529;
+}
+.login{
+    display: block;
+    width: 280px;
+    height: 35px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    
+}
+body{
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,Arial, Helvetica, sans-serif;
+    color: #212529;
+}
+
+#email:focus{
+    background-color:lightgrey;
+    border: 2px solid rgb(0, 174, 255);
+}
+
+#senha:focus{
+    background-color: lightgray;
+    border: none;
+
+}
+
+.login:hover{
+    border: 2px solid rgb(0, 140, 255);
+}
+
+
+#btn{
+    width: 300px;
+    height: 40px;
+    background-color: rgb(0, 81, 255);
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    margin-bottom: 40px;
+}
+
+#btn:hover{
+    background-color: rgb(0, 60, 255);
+}
+
+
+a:hover{
+    font-weight: bold;
+}
+ footer{
+    margin-top: 10px;
+    font-size: 12px;
+ }
