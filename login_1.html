@@ -4,66 +4,235 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FISIA - Sing in RH System</title>
-    <link rel="icon" href="C:\Users\MSan77\Desktop\M.S\Metrocamp\Desenvolvimento Web\Projeto AV1\icone.jpg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <style>
-        body{
-            background-color: whitesmoke;
-        }
-    </style>
-</head>
+    <title>FISIA - Register Employee System</title>
+    <link rel="icon" href="icone.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
+  </head>
 <body>
-    
-    <form style="margin-left: auto;margin-right: auto; text-align: center;" action="C:\Users\MSan77\Desktop\M.S\Metrocamp\Desenvolvimento Web\Projeto AV1\Formulario_1.html" method="get">
-        <img src="icone_login.png" alt="" style="margin-top: 50px;">
-        <H1 style="margin-top: 30px; margin-bottom: 30px;color: #212529">Please Sing-in</H1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding: 30px;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="login_1.html">Human Resource Management</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+                  </svg>
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                  </svg>
+                  Cadastro
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                  Consulta
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login_1.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+                    <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+                  </svg>
+                  Sair
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="" href="Formulario_1.html">Informações Gerais</a>
+              </li>
+              <li class="nav-item" >
+                <a class="nav-link" href="Fomulario_2.html" >Informações Pessoais</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Formulario_3.html">Documentação</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <hr>
+      <br>
+  <form class="row g-3 needs-validation" novalidate style="margin-left: 10px;margin-right: 10px;">
+      <legend>Informações Gerais</legend>
+      <div class="col-md-4">
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">Situação</span>
+            <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Escolha...</option>
+                <option value="Gerente">Ligado</option>
+                <option value="Supervisor">Desligado</option>
+            </select>
+          <div class="invalid-feedback">
+                Please choose a username.
+          </div>
+        </div>
+      </div>
 
-        <div class="d-flex justify-content-center">
-            <div class="col-md-4">
-                <div class="input-group has-validation">
-                <span class="input-group-text">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-badge-fill" viewBox="0 0 16 16">
-                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm4.5 0a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm5 2.755C12.146 12.825 10.623 12 8 12s-4.146.826-5 1.755V14a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-.245z"/>
-                    </svg>
-                </span>
-                <input type="text" class="form-control"required placeholder="@username">
-                </div>
-            </div>
-        </div>    
-        
-        <div class="d-flex justify-content-center">
-            <div class="col-md-4">
-                <div class="input-group has-validation">
-                <span class="input-group-text">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-lock2-fill" viewBox="0 0 16 16">
-                        <path d="M7 6a1 1 0 0 1 2 0v1H7V6z"/>
-                        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-2 6v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0z"/>
-                    </svg>
-                </span>
-                    <input type="password" class="form-control" required placeholder="Password">
-                </div>
-            </div>
+      <div class="col-md-4">
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">Tipo de Pagamento</span>
+            <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Escolha...</option>
+                <option value="Gerente">Mensal</option>
+                <option value="Supervisor">Semanal</option>
+                <option value="Supervisor">Diario</option>
+            </select>
+          <div class="invalid-feedback">
+                Please choose a username.
+          </div>
         </div>
-        <br>
-        <div  class="form-check">
-            <input type="checkbox" > Remember me
+      </div>
+
+      <div class="col-md-4">
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">Departamento</span>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Escolha...</option>
+              <option value="Planejameto">Planejameto</option>
+              <option value="Inventário">Inventário</option>
+              <option value="Financeiro">Financeiro</option>
+              <option value="Recursos Humanos">Recursos Humanos</option>
+              <option value="Transporte">Transporte</option>
+              <option value="TI">TI</option>
+              <option value="Projetos">Projetos</option>
+            </select>
+          <div class="invalid-feedback">
+                Please choose a username.
+          </div>
         </div>
-        <br>
-        <div class="d-flex justify-content-center">
-         <button class="btn btn-primary btn-dark" type="submit">Entrar</button>
+      </div>
+
+      <div class="col-md-4">
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">Cargo</span>
+            <select class="form-select" id="validationCustom04" required>
+              <option value="Gerente">Gerente</option>
+                <option value="Supervisor">Supervisor</option>
+                <option value="Coordenador">Coordenador</option>
+                <option value="Especialista">Especialista</option>
+                <option value="Análista Sr">Análista Sr</option>
+                <option value="Análista Pl">Análista Pl</option>
+                <option value="Análista Jr">Análista Jr</option>
+                <option value="Assistente">Assistente</option>
+                <option value="Auxiliar">Auxiliar</option>
+                <option value="Estagiario">Estagiario</option>
+            </select>
+          <div class="invalid-feedback">
+                Please choose a username.
+          </div>
         </div>
-    </form>
-    <br>
-    <div class="d-flex justify-content-center">
-       <a href="#"> Register </a>
+      </div>
+
+      <div class="col-md-4">
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">Jornanda Semanal</span>
+          <input type="number" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required style="width: 5px;">
+          <div class="invalid-feedback">
+                Please choose a username.
+          </div>
+        </div>
     </div>
-    <footer style="text-align: center; font-size: 1rem; margin-top: 50PX;">
-        &copy;FISIA DISTRIBUIDORA OFICIAL NIKE DO BRASIL
-    </footer>
+
+    <div class="col-md-4">
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend">% Adiantamento</span>
+        <input type="number" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required style="width: 5px;">
+        <div class="invalid-feedback">
+              Please choose a username.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend">Sálario</span>
+        <input type="number" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required style="width: 5px;" placeholder="R$">
+        <div class="invalid-feedback">
+              Please choose a username.
+        </div>
+      </div>
+   </div>
+
+<div class="col-md-4">
+  <div class="input-group has-validation">
+    <span class="input-group-text" id="inputGroupPrepend">Data Admissão</span>
+    <input type="date" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required style="width: 5px;" placeholder="R$">
+    <div class="invalid-feedback">
+          Please choose a username.
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="input-group has-validation">
+    <span class="input-group-text" id="inputGroupPrepend">Tipo de Admissão</span>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">Escolha...</option>  
+        <option>1 - Admissão</option>
+        <option>2 - Transferência de empresa do mesmo grupo econômico</option>
+        <option>3 - Admissão por sucessão, incorporação ou fusão</option>
+        <option>4 - Trabalhador cedido</option>
+        <option>5 - Temporario</option>
+      </select>
+    <div class="invalid-feedback">
+          Please choose a username.
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="input-group has-validation">
+    <span class="input-group-text" id="inputGroupPrepend">Foto 3x4</span>
+    <input type="file" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required style="width: 5px;" placeholder="R$">
+    <div class="invalid-feedback">
+          Please choose a username.
+    </div>
+  </div>
+</div>
+
+  <div class="col-md-4">
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">Descrição da Função</span>
+      <textarea type="" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required style="width: 5px;">
+      </textarea>
+        <div class="invalid-feedback">
+            Please choose a username.
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12">
+     <button class="btn btn-primary btn-dark" type="submit">Submit form</button>
+     <button class="btn btn-primary btn-dark" type="reset">Delete</button>
+  </div>
+</form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-
 </body>
 </html>
